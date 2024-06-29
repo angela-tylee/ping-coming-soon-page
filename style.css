@@ -1,0 +1,192 @@
+/* ### Primary
+
+- Blue: hsl(223, 87%, 63%)
+
+### Secondary
+
+- Pale Blue: hsl(223, 100%, 88%)
+- Light Red: hsl(354, 100%, 66%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 59%)
+- Very Dark Blue: hsl(209, 33%, 12%) */
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+  color: var(--very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body, h1, p {
+  margin: 0;
+}
+
+.container {
+  width: 40%;
+  min-width: 640px;
+  margin: 0 auto;
+  padding-block: 3em 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+}
+
+.heading p {
+  margin-top: 1em;
+}
+
+h1 {
+  margin-top: 1em;
+  font-size: 2.5rem;
+  font-weight: 200;
+  color: var(--gray);
+}
+
+h1 strong {
+  color: var(--very-dark-blue);
+}
+
+.input-group {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 0.5em;
+}
+
+.input-group input,
+.input-group button {
+  border-radius: 30px;
+  padding: 1.2em 1.8em;
+}
+
+.input-group input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--pale-blue);
+}
+
+.input-group input::placeholder {
+  color: var(--pale-blue);
+}
+
+.input-group input:focus {
+  outline: 0;
+}
+
+.input-group button {
+  border: 0;
+  background-color: var(--blue);
+  color: white;
+  box-shadow: 1px 3px 5px var(--pale-blue);
+  transition: all 0.5s;
+}
+
+.input-group button:hover {
+  cursor: pointer;
+  transform: translate(1px, 1px);
+}
+
+.error-message, .error-message-mobile {
+  margin-block: 0.8em;
+  padding: 0 2.5em;
+  color: var(--light-red);
+  font-size: 0.5rem;
+  font-style: italic;
+  display: none;
+}
+
+.error-message {
+  text-align: start;
+}
+
+.input-group input.error-state {
+  border: 1px solid var(--light-red);
+}
+
+
+.hero-img {
+  margin-top: 3em;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+footer {
+  margin-top: 4em;
+  font-size: 0.5rem;
+  color: var(--gray);
+}
+
+footer p {
+  margin-top: 1em;
+}
+
+.social-media-icons img {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 85%;
+    min-width: 0;
+  }
+
+  .input-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    justify-content: space-around;
+    gap: 5em;
+  }
+  .container{
+    padding-top: 8em;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-img {
+    margin-top: 8em;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+
+}
