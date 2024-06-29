@@ -179,6 +179,9 @@ footer p {
   .hero-img {
     margin-top: 8em;
   }
+  .error-message-mobile {
+    font-size: 0.8rem;
+  }
   footer p {
     font-size: 0.8rem;
   }
@@ -188,5 +191,4 @@ footer p {
   html {
     font-size: 12px;
   }
-
 }
