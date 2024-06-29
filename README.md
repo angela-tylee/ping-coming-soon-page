@@ -29,10 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
+<img width="1438" alt="image" src="https://github.com/angela-tylee/ping-coming-soon-page/assets/145020731/4cbfc0f2-2bdb-4045-8e1b-0e9549732cdd">
+<img width="508" alt="image" src="https://github.com/angela-tylee/ping-coming-soon-page/assets/145020731/93b6711c-23ba-4160-99ed-4650ba920613">
+
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://github.com/angela-tylee/ping-coming-soon-page
+- Live Site URL: https://angela-tylee.github.io/ping-coming-soon-page/
 
 ## My process
 
